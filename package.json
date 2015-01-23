@@ -1,0 +1,23 @@
+{
+	"name": "exposure",
+	"version": "0.1.0",
+	"author": "Pieter Provoost <pieterprovoost@gmail.com>",
+	"license": "MIT",
+	"main": "./exposure.js",
+	"dependencies": {
+		"jerzy": "0.2.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pieterprovoost/exposure"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"chai": "*",
+		"webmake": "*"
+	},
+	"scripts": {
+		"test": "node_modules/.bin/mocha",
+		"build": "node_modules/.bin/webmake exposure.js browser.js"
+	}
+}
