@@ -28,7 +28,8 @@ console.log(exposure.Lognormal.mle(v));
 3.49354323801306
 ```
 
-#### Mean confidence limits
+#### Mean
+##### Confidence limits
 
 ```javascript
 // Approximation of Land's exact 95% LCL and UCL (Hewett & Ganser, 1997)
@@ -53,7 +54,7 @@ console.log(exposure.Lognormal.landFactor95UCL(1.75, 15));
 4.027838975792285
 ```
 
-#### Exceedance fraction point estimate
+#### Exceedance fraction
 
 ```javascript
 var v = new jerzy.Vector([1, 2, 3, 8]);
