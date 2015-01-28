@@ -8,8 +8,8 @@ Statistical analysis of occupational exposure data
 
 <a name="lognormal"></a>
 ### Lognormal distribution
-
-#### Mean point estimates
+#### Mean 
+##### Point estimates
 
 ```javascript
 var v = new jerzy.Vector([1, 2, 3, 8]);
@@ -28,7 +28,6 @@ console.log(exposure.Lognormal.mle(v));
 3.49354323801306
 ```
 
-#### Mean
 ##### Confidence limits
 
 ```javascript
@@ -55,6 +54,7 @@ console.log(exposure.Lognormal.landFactor95UCL(1.75, 15));
 ```
 
 #### Exceedance fraction
+##### Point estimate
 
 ```javascript
 var v = new jerzy.Vector([1, 2, 3, 8]);
