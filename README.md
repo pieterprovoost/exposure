@@ -9,6 +9,25 @@ Statistical analysis of occupational exposure data
 <a name="lognormal"></a>
 ### Lognormal distribution
 
+#### Point estimates
+
+```javascript
+var v = new jerzy.Vector([1, 2, 3, 8]);
+
+// Minimum Variance Unbiased Estimate of the true mean
+
+console.log(exposure.Lognormal.mvue(v));
+
+// Maximum Likelihood Estimate of the true mean
+
+console.log(exposure.Lognormal.mle(v));
+```
+
+``` text
+3.4432668868138645
+3.49354323801306
+```
+
 #### Confidence limits
 
 ```javascript
