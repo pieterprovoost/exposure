@@ -9,7 +9,7 @@ Statistical analysis of occupational exposure data
 <a name="lognormal"></a>
 ### Lognormal distribution
 
-#### Point estimates
+#### Mean point estimates
 
 ```javascript
 var v = new jerzy.Vector([1, 2, 3, 8]);
@@ -28,7 +28,7 @@ console.log(exposure.Lognormal.mle(v));
 3.49354323801306
 ```
 
-#### Confidence limits
+#### Mean confidence limits
 
 ```javascript
 // Approximation of Land's exact 95% LCL and UCL (Hewett & Ganser, 1997)
@@ -52,3 +52,15 @@ console.log(exposure.Lognormal.landFactor95UCL(1.75, 15));
 -2.127657636768961
 4.027838975792285
 ```
+
+#### Exceedance fraction point estimate
+
+```javascript
+var v = new jerzy.Vector([1, 2, 3, 8]);
+console.log(exposure.Lognormal.exceedance(v, 10.0));
+```
+
+```text
+0.062246072660867346
+```
+
