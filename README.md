@@ -17,3 +17,7 @@ Statistical analysis of occupational exposure data
 var v = new jerzy.Vector([0, 1, 2, 3]);
 console.log(exposure.Lognormal.landExact95(v));
 ```
+
+```text
+[ 1.81005174980393, 71.40297997261662 ]
+```
